@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Arya:wght@400;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:wght@900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Inicio de estilos generales del sitio*/
+html {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Inicio de estilos de header */
+.header {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.bgHeader {
+  background-image: url(../assets/img/bg-00.jpg);
+  height: 80vh;
+  margin-top: -4.5rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgHeader-01 {
+  background-image: url(../assets/img/bg-04.jpg);
+  height: 80vh;
+  margin-top: -4.5rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header li {
+  display: inline-flex;
+  padding: 0 1.5rem;
+  padding-top: 2rem;
+}
+
+.header a:link {
+  color: white;
+}
+
+.header a:visited {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+/* Inicio de estilos de main */
+.headlines {
+  padding: 10% 0 0 0;
+  text-align: center;
+}
+
+main div h1 {
+  color: white;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+main div h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/*Inicio de estilos de seccion Main News*/
+.mainNews {
+  display: flex;
+  font-size: 2.5em;
+  height: 50rem;
+}
+
+.mainNews a:visited {
+  color: black;
+}
+
+main div p {
+  justify-content: center;
+}
+
+.newsText {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  padding: 0 5%;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.button1 {
+  background-color: #E3E3E3;
+  padding: 0.5em 5em;
+}
+
+.sliderContainer {
+  margin-top: -15rem;
+  padding: 0 5%;
+}
+
+.sliderContainer img {
+  height: 50rem;
+  width: 50rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*Inicio de estilos de seccion Newsletter*/
+.newsletterSection {
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr);
+}
+
+.subscribe {
+  background-color: #E3E3E3;
+  color: black;
+  height: 450px;
+  margin: 0 5%;
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.subscribe p {
+  font-size: 2em;
+}
+
+.subscribe form input {
+  padding: 2rem 10rem;
+  margin: 0;
+}
+
+.subscribeForm {
+  border-radius: 1.5rem 0 0 1.5rem;
+  margin: 0;
+  border-right: 0;
+}
+
+.subscribeButton {
+  border-radius: 1.5rem;
+  margin: 0;
+}
+
+/*Inicio de estilos de footer*/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #666666;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.fa-instagram {
+  color: white;
+  font-size: 2em;
+}
+
+.fa-twitter {
+  color: white;
+  font-size: 2em;
+}
+
+/*Inicio de estilos de pagina de shop*/
+.buttonShop {
+  border: none;
+  padding: 2rem 12rem;
+  color: black;
+  background-color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 2rem 0 0;
+}
+
+.fa-bag-shopping {
+  color: black;
+  font-size: 1.2em;
+  padding-right: 1em;
+}
+
+.shopMenu {
+  margin: 2rem 5%;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+.collectionButtons {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.collectionButtons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.collectionButtons li a {
+  color: black;
+  background-color: white;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+
+.sortBy {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 2%;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.button3 {
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: none;
+}
+
+.sizesButtons {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sizesButtons ul {
+  display: flex;
+  align-self: flex-end;
+  list-style-type: none;
+  column-gap: .5rem;
+  list-style-type: none;
+}
+
+.sizesButtons li a {
+  color: black;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 5%;
+}
+
+.productContainer {
+  height: 500px;
+  position: relative;
+  /*width: 50%;*/
+}
+
+.productContainer img {
+  width: 80%;
+  /*height: auto;*/
+  border: 0.5rem solid white;
+}
+
+.productButtons {
+  position: absolute;
+  top: 18rem;
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);*/
+}
+
+.linkShop {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+}
+
+.linkDetail {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.buttonMore {
+  padding: 1rem 3rem;
+  font-weight: 600;
+}
+
+.disclaimer {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  line-height: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.disclaimerImage {
+  background-image: url(../assets/img/bg-01.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+/*Inicio de estilos de pagina del detalle*/
+.bgHeader-02 {
+  background-image: url(../assets/img/bg-05.jpg);
+  height: 100vh;
+  margin-top: -4.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imageDetail img {
+  width: 20%;
+}
+
+.moreProducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.productSpecs {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: -30% 0 0 0;
+  font-size: 2rem;
+}
+
+.sizes button {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.buttonCanvas {
+  margin-top: 2rem;
+}
+
+.productDescription {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: 5rem;
+}
+
+.productDescription p {
+  width: 50%;
+}
