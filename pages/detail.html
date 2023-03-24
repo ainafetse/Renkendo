@@ -2,120 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renkendo</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://kit.fontawesome.com/e77bd3fa9a.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renkendo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://kit.fontawesome.com/e77bd3fa9a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="header">
-                <ul>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="../index.html">Renkendo</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="headlines bgHeader-02">
-            <div class="productDetail">
-                <div class="imageDetail">
-                    <img src="../assets/img/product-00-A.jpg" alt="shirt bync">
-                </div>
-                <div class="productSpecs">
-                    <span>$900.00 mxn</span>
-                    <div class="sizes">
-                        <button id="small">S</button>
-                        <button id="medium">M</button>
-                        <button id="large">L</button>
-                        <button id="extraLarge">XL</button>
-                    </div>
-                    <div>
-                        <!--<label for="sortBy" class="button button2">Sort by:</label>-->
-                        <select name="canvas" id="canvas" class="button buttonCanvas">
-                            <option value="none">select canvas</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                            <option value="grey">Grey</option>
-                            <option value="indigo blue">Indigo</option>
-                            <option value="red">Red</option>
-                            <option value="pink">Pink</option>
-                            <option value="mustard">Mustard</option>
-                            <option value="navy blue">Navy Blue</option>
-                            <option value="dark grey">Dark Grey</option>
-                        </select>
-                    </div>
-                    <div>
-                        <button><i class="fa-solid fa-bag-shopping"></i></button>
-                        <button><i class="fa-solid fa-bag-shopping"></i></button>
-                    </div>
-                </div>
-            </div>
+<body class="bgDetail">
+  <header>
+    <nav>
+      <div class="headerBar">
+        <ul>
+          <li class="menuSecondary">
+            <a class="displayMobile displayWeb" href="./shop.html"><i class="bi bi-bag iconShop"></i></a>
+            <a class="displayWeb" href="./shop.html">Shop</a>
+          </li>
+          <li class="menuPrimary"><a href="../index.html">Renkendo</a></li>
+          <li class="menuSecondary">
+            <a class="displayMobile" href="./contact.html"><i class="bi bi-chat iconContact"></i></a>
+            <a class="displayWeb" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="productDetail">
+      <div id="carouselExampleIndicators" class="carousel carousel-fade">
+        <div class="carousel-inner positionImageDetail">
+          <div class="carousel-item active">
+            <img src="../assets/img/product-00-A.png" class="d-block carouselImageDetail" alt="printed designer shirt" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/product-00-B.png" class="d-block carouselImageDetail" alt="printed designer shirt" />
+          </div>
         </div>
-        <div class="productDescription">
-            <h2>BYNC II - 2023</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero, molestias laboriosam
-                reiciendis ipsum, fugit voluptas dicta, rem ab soluta accusantium reprehenderit repudiandae.
-                Architecto sunt non sapiente blanditiis. Inventore optio quia excepturi ut rerum quisquam.</p>
+        <div class="carousel-indicators carouselIndicatorsDetail">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+            class="rounded-circle"></button>
         </div>
-        <section class="moreProducts">
-            <div class="productContainer">
-                <img src="../assets/img/product-12-A.jpg" alt="printed designer shirt" />
-                <div class="productButtons">
-                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-                </div>
-            </div>
-            <div class="productContainer">
-                <img src="../assets/img/product-13-A.jpg" alt="printed designer shirt" />
-                <div class="productButtons">
-                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-                </div>
-            </div>
-            <div class="productContainer">
-                <img src="../assets/img/product-14-A.jpg" alt="printed designer shirt" />
-                <div class="productButtons">
-                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-                </div>
-            </div>
-            <div class="productContainer">
-                <img src="../assets/img/product-15-A.jpg" alt="printed designer shirt" />
-                <div class="productButtons">
-                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-                </div>
-            </div>
-        </section>
-        <div class="newsletterSection">
-            <div class="subscribe">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consequuntur tempora eius animi possimus nisi? Cupiditate cum quia,
-                    praesentium et numquam fugit rerum dignissimos dolorem impedit?
-                </p>
-                <form action="" method="post">
-                    <label for="mail">
-                        <input type="email" id="mail" placeholder="mail@email.com" class="subscribeForm" />
-                    </label>
-                    <input type="submit" value="Subscribe" class="subscribeButton" />
-                </form>
-            </div>
-            <div class="newsletterImage">
-                <img src="../assets/img/newsletter.png" alt="woman drinking coffee" />
-            </div>
+      </div>
+      <div class="productControlsContainer">
+        <div class="productControls">
+          <span>$900.00 mxn</span>
+          <button class="btnProductControl">
+            <i class="bi bi-bag-plus"></i>
+          </button>
+          <button class="btnProductControl">
+            <i class="bi bi-heart"></i>
+          </button>
         </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <a href="https://www.instagram.com/renegarza__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <p>Rene Garza 2023. All rights reserved.</p>
-            <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <div class="productSizes">
+          <button type="button" value="small" id="small">S</button>
+          <button type="button" value="medium" id="medium">M</button>
+          <button type="button" value="large" id="large">L</button>
+          <button type="button" value="extra large" id="extraLarge">
+            XL
+          </button>
         </div>
-    </footer>
+        <div>
+          <select name="canvas" id="canvas" class="btnProductCanvas">
+            <option value="none">select canvas</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="grey">Grey</option>
+            <option value="indigo blue">Indigo</option>
+            <option value="red">Red</option>
+            <option value="pink">Pink</option>
+            <option value="mustard">Mustard</option>
+            <option value="navy blue">Navy Blue</option>
+            <option value="dark grey">Dark Grey</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="productDescription">
+      <h2>BYNC II - 2023</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero,
+        molestias laboriosam reiciendis ipsum, fugit voluptas dicta, rem ab
+        soluta accusantium reprehenderit repudiandae. Architecto sunt non
+        sapiente blanditiis. Inventore optio quia excepturi ut rerum quisquam.
+      </p>
+    </div>
+    <div class="moreProductsSection">
+      <h3>More from the 2023 Collection</h3>
+    </div>
+    <section class="moreProductsCarousel">
+      <div class="moreProductsContainer">
+        <img src="../assets/img/product-12-A.jpg" alt="printed designer shirt" />
+      </div>
+      <div class="moreProductsContainer">
+        <img src="../assets/img/product-13-A.jpg" alt="printed designer shirt" />
+      </div>
+      <div class="moreProductsContainer">
+        <img src="../assets/img/product-14-A.jpg" alt="printed designer shirt" />
+      </div>
+      <div class="moreProductsContainer">
+        <img src="../assets/img/product-15-A.jpg" alt="printed designer shirt" />
+      </div>
+    </section>
+    <div class="loadMore">
+      <a href="./shop.html"><button class="buttonMore">View All</button></a>
+    </div>
+    <div class="newsletterContainer">
+      <div class="newsletterInfo">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Consequuntur tempora eius animi possimus nisi? Cupiditate cum quia,
+          praesentium et numquam fugit rerum dignissimos dolorem impedit?
+        </p>
+        <div class="content">
+          <form class="subscription">
+            <input class="add-email" type="email" placeholder="me@mail.com" />
+            <button class="submit-email" type="button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="newsletterImage">
+        <img src="../assets/img/newsletter.png" alt="woman drinking coffee" />
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <a href="https://www.instagram.com/renegarza__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <p class="displayMobile">
+        René Garza 2023.® <br />All rights reserved.
+      </p>
+      <p class="displayWeb">René Garza 2023.® All rights reserved.</p>
+      <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

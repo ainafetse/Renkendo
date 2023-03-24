@@ -2,64 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renkendo</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="https://kit.fontawesome.com/e77bd3fa9a.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renkendo</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://kit.fontawesome.com/e77bd3fa9a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header>
-        <!-- el logo la barra de navegacion algun login-->
-        <nav>
-            <div class="header">
-                <ul>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="../index.html">Renkendo</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="row bgHeader bgHeader-03">
-            <div class="contactForm">
-                <form action="" method="post">
-                    <p>For inquiries or questions please fill out the form below</p>
-                    <label for="name">
-                        <input type="text" id="name" placeholder="Name" />
-                    </label>
-                    <label for="mail">
-                        <input type="email" id="mail" placeholder="mail@email.com" />
-                    </label>
-                    <label for="request">Select request:</label>
-                        <select name="requests" id="requests">
-                        <option value="shipping">Shipping</option>
-                        <option value="returns">Returns</option>
-                        <option value="request">Requests</option>
-                        <option value="general">General</option>
-                    </select>
-                    <label for="message">
-                        <input type="text" id="message" placeholder="Message" />
-                    </label>
-                    <input type="submit" placeholder="send" />
-                </form>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/renegarza__/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <!--redes sociales numeros contactos mapa-->
-        <div class="footer">
-            <p>Rene Garza 2023. All rights reserved.</p>
-        </div>
-    </footer>
+<body class="bgContact">
+  <header>
+    <nav>
+      <div class="headerBar">
+        <ul>
+          <li class="menuSecondary">
+            <a class="displayMobile displayWeb" href="./shop.html"><i class="bi bi-bag iconShop"></i></a>
+            <a class="displayWeb" href="./shop.html">Shop</a>
+          </li>
+          <li class="menuPrimary"><a href="../index.html">Renkendo</a></li>
+          <li class="menuSecondary">
+            <a class="displayMobile" href="./contact.html"><i class="bi bi-chat iconContact"></i></a>
+            <a class="displayWeb" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="webView">
+    <div class="socialLinksContainer">
+      <h2>Lets keep in touch!</h2>
+      <a href="https://www.instagram.com/renegarza__/" target="_blank"><i class="fa-brands fa-instagram"></i>
+        /renegarza_</a>
+      <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i> /renegarza_gr</a>
+      <a href="https://www.redbubble.com/es/people/renkendo/shop" target="_blank"><img src="../assets/img/redBubble.png"
+          alt="redbubble logo"> /renkendo</a>
+    </div>
+    <div class="contactFormContainer">
+      <p>For inquiries or questions please fill out the form below</p>
+      <form action="" method="post" class="formContainer">
+        <label for="name">
+          <input type="text" id="name" placeholder="Name" />
+        </label>
+        <label for="mail">
+          <input type="email" id="mail" placeholder="mail@email.com" />
+        </label>
+        <select name="requests" id="requests">
+          <option value="none">Select Request:</option>
+          <option value="shipping">Shipping</option>
+          <option value="returns">Returns</option>
+          <option value="request">Requests</option>
+          <option value="general">General</option>
+        </select>
+        <label for="message">
+          <textarea name="message" id="message" cols="33" rows="8" placeholder="Message"></textarea>
+        </label>
+        <input type="submit" value="send" class="formSubmit" />
+      </form>
+    </div>
+  </main>
+  <div class="newsletterContainer">
+    <div class="newsletterInfo">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Consequuntur tempora eius animi possimus nisi? Cupiditate cum quia,
+        praesentium et numquam fugit rerum dignissimos dolorem impedit?
+      </p>
+      <div class="content">
+        <form class="subscription">
+          <input class="add-email" type="email" placeholder="me@mail.com">
+          <button class="submit-email" type="button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="newsletterImage">
+      <img src="../assets/img/newsletter.png" alt="woman drinking coffee" />
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <a href="https://www.instagram.com/renegarza__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <p class="displayMobile">René Garza 2023.® <br>All rights reserved.</p>
+      <p class="displayWeb">René Garza 2023.® All rights reserved.</p>
+      <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
 </body>
 
 </html>

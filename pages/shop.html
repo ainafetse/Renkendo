@@ -10,31 +10,44 @@
   <script src="https://kit.fontawesome.com/e77bd3fa9a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bgIndex">
   <header>
-    <!-- el logo la barra de navegacion algun login-->
     <nav>
-      <div class="header">
+      <div class="headerBar">
         <ul>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="../index.html">Renkendo</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="menuSecondary">
+            <a class="displayMobile displayWeb" href="./shop.html"><i class="bi bi-bag iconShop"></i></a>
+            <a class="displayWeb" href="./shop.html">Shop</a>
+          </li>
+          <li class="menuPrimary"><a href="../index.html">Renkendo</a></li>
+          <li class="menuSecondary">
+            <a class="displayMobile" href="./contact.html"><i class="bi bi-chat iconContact"></i></a>
+            <a class="displayWeb" href="./contact.html">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <!--va a llevar toda la info directamente relacionada con el sitio-->
-    <div class="headlines bgHeader">
-      <a href="#shirts"><button class="button buttonShop">
-          <i class="fa-solid fa-bag-shopping"></i><span>Shirts</span>
+    <div class="headlines">
+      <a href="#Shirts"><button class="btn btnLarge">
+          <i class="bi bi-bag iconShopping"></i><span>Shirts</span>
         </button></a>
-      <a href="../pages/prints.html"><button class="button buttonShop">
-          <i class="fa-solid fa-bag-shopping"></i><span>Prints</span>
+      <a href="../pages/prints.html"><button class="btn btnLarge">
+          <i class="bi bi-bag iconShopping"></i><span>Prints</span>
         </button></a>
     </div>
-    <div class="shopMenu">
-      <div class="collectionButtons">
+    <div class="shopMenuContainer">
+      <div class="collectionMenu displayMobile">
+        <label for="collection" class="btnSmall">View Collection:</label>
+        <select name="collection" id="Collection" class="btnMedium">
+          <option value="all">View All</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+        </select>
+      </div>
+      <div class="collectionSelectorMenu displayWeb">
         <ul>
           <li><a href="#2023">2023</a></li>
           <li><a href="#2022">2022</a></li>
@@ -42,16 +55,16 @@
           <li><a href="#2020">2020</a></li>
         </ul>
       </div>
-      <div class="sortBy">
-        <label for="sortBy" class="button button2">Sort by:</label>
-        <select name="sortBy" id="sortBy" class="button button3">
+      <div class="sortByMenu">
+        <label for="sortBy" class="btnSmall">Sort by:</label>
+        <select name="sortBy" id="sortBy" class="btnMedium">
           <option value="newest">Newest Collection</option>
           <option value="low">Price low to high</option>
           <option value="high">Price high to low</option>
           <option value="popular">Most Popular</option>
         </select>
       </div>
-      <div class="sizesButtons">
+      <div class="sizesMenu displayWeb">
         <ul>
           <li><a href="#small">S</a></li>
           <li><a href="#medium">M</a></li>
@@ -60,89 +73,89 @@
         </ul>
       </div>
     </div>
-    <div class="products">
-      <div class="productContainer">
+    <div class="products" id="Shirts">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-00-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-01-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-02-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-03-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-04-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-05-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-06-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-07-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-08-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-09-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-10-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
-      <div class="productContainer">
+      <div class="productContainerShirts">
         <a href="./detail.html"><img src="../assets/img/product-11-A.jpg" alt="printed designer shirt" /></a>
         <div class="productButtons">
-          <a href="#" class="linkShop"><i class="fa-solid fa-shopping-bag"></i></a>
-          <a href="#" class="linkDetail"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-bag"></i></a>
+          <a href="#" class="linkShirts"><i class="bi bi-zoom-in"></i></a>
         </div>
       </div>
     </div>
@@ -156,19 +169,19 @@
         <h3>Locally made in Mty, MX with love. <i class="fa-solid fa-heart"></i></h3>
       </div>
     </div>
-    <div class="newsletterSection">
-      <div class="subscribe">
+    <div class="newsletterContainer">
+      <div class="newsletterInfo">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Consequuntur tempora eius animi possimus nisi? Cupiditate cum quia,
           praesentium et numquam fugit rerum dignissimos dolorem impedit?
         </p>
-        <form action="" method="post">
-          <label for="mail">
-            <input type="email" id="mail" placeholder="mail@email.com" class="subscribeForm" />
-          </label>
-          <input type="submit" value="Subscribe" class="subscribeButton" />
-        </form>
+        <div class="content">
+          <form class="subscription">
+            <input class="add-email" type="email" placeholder="me@mail.com">
+            <button class="submit-email" type="button">Subscribe</button>
+          </form>
+        </div>
       </div>
       <div class="newsletterImage">
         <img src="../assets/img/newsletter.png" alt="woman drinking coffee" />
@@ -178,7 +191,8 @@
   <footer>
     <div class="footer">
       <a href="https://www.instagram.com/renegarza__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <p>Rene Garza 2023. All rights reserved.</p>
+      <p class="displayMobile">René Garza 2023.® <br>All rights reserved.</p>
+      <p class="displayWeb">René Garza 2023.® All rights reserved.</p>
       <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>

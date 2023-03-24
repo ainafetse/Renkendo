@@ -6,24 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Renkendo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css" />
   <script src="https://kit.fontawesome.com/e77bd3fa9a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bgIndex">
   <header>
     <nav>
-      <div class="header">
+      <div class="headerBar">
         <ul>
-          <li><a href="./pages/shop.html">Shop</a></li>
-          <li><a href="#">Renkendo</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
+          <li class="menuSecondary">
+            <a class="displayMobile displayWeb" href="./pages/shop.html"><i class="bi bi-bag iconShop"></i></a>
+            <a class="displayWeb" href="./pages/shop.html">Shop</a>
+          </li>
+          <li class="menuPrimary"><a href="#">Renkendo</a></li>
+          <li class="menuSecondary">
+            <a class="displayMobile" href="./pages/contact.html"><i class="bi bi-chat iconContact"></i></a>
+            <a class="displayWeb" href="./pages/contact.html">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
   <main>
-    <div class="headlines bgHeader">
+    <div class="headlinesIndex">
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
       <h2>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
@@ -31,32 +39,59 @@
       </h2>
     </div>
     <div class="mainNews">
-      <div class="newsText">
+      <div class="mainNewsInfo">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
           inventore labore, molestias iste nulla est assumenda in voluptate
           cumque explicabo!
         </p>
-        <a href="./pages/shop.html" class="button button1">shop<i class="fa-solid fa-arrow-right"></i></a>
+        <a href="./pages/shop.html" class="btn btn-shop">shop<i class="fa-solid fa-arrow-right"></i></a>
       </div>
-      <div class="sliderContainer">
-        <a href="./pages/detail.html"><img class="sliderItem" src="./assets/img/product-00-A.jpg"
-            alt="new product bync shirt" /></a>
+      <div id="carouselExampleCaptions" class="mainNewsContainer carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/newReleases-01.png" class="d-block w-100" alt="printed designer shirt">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/newReleases-02.png" class="d-block w-100" alt="printed designer shirt">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/newReleases-03.png" class="d-block w-100" alt="printed designer shirt">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <div class="newsletterSection">
-      <div class="subscribe">
+    <div class="newsletterContainer">
+      <div class="newsletterInfo">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Consequuntur tempora eius animi possimus nisi? Cupiditate cum quia,
           praesentium et numquam fugit rerum dignissimos dolorem impedit?
         </p>
-        <form action="" method="post">
-          <label for="mail">
-            <input type="email" id="mail" placeholder="mail@email.com" class="subscribeForm" />
-          </label>
-          <input type="submit" value="Subscribe" class="subscribeButton" />
-        </form>
+        <div class="content">
+          <form class="subscription">
+            <input class="add-email" type="email" placeholder="me@mail.com">
+            <button class="submit-email" type="button">Subscribe</button>
+          </form>
+        </div>
       </div>
       <div class="newsletterImage">
         <img src="./assets/img/newsletter.png" alt="woman drinking coffee" />
@@ -66,10 +101,14 @@
   <footer>
     <div class="footer">
       <a href="https://www.instagram.com/renegarza__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <p>Rene Garza 2023. All rights reserved.</p>
+      <p class="displayMobile">René Garza 2023.® <br>All rights reserved.</p>
+      <p class="displayWeb">René Garza 2023.® All rights reserved.</p>
       <a href="https://www.twitter.com/rene_gr/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
