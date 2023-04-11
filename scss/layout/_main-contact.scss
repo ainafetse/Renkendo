@@ -1,0 +1,80 @@
+/*Inicio de estilos de pagina Contact*/
+.bgContact {
+    background-image: url(../assets/img/bgIndexMobile.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-color: $backgroundColor;
+}
+.socialLinksContainer {
+    @include flex (column, space-evenly, center, none);
+    height: 70vh;
+    text-align: center;
+    a{
+        color: $negativeColor;
+        font-size: 2em;
+        &:hover{
+            font-weight: 600;
+        }
+        img{
+            width: 5rem;
+        }
+    }
+}
+.contactFormContainer {
+    @include flex (column, center, center, none);
+    height: auto;
+    color: $backgroundColor;
+    font-size: 1.5em;
+    background-color: $negativeColor;
+    width: 100%;
+    padding: 10% 5%;
+    p{
+        font-size: 1.5em;
+        font-weight: 600;
+        color: $formContainerP;
+    }
+    form{
+        @include flex (column, center, center, none);
+        width: 100%;
+        margin: 5% 0;
+        label{
+            width: 100%;
+            padding: 1rem;
+            input{
+                font-size: 1.6rem;
+                color: $backgroundColor;
+                outline: none;
+                border: 1px solid $backgroundColor;
+                width: 100%;
+                padding: 1.5rem 0.5rem;
+                border-radius: 1rem;
+            }
+            textarea{
+                font-family: "DM Sans", sans-serif;
+                font-size: 1.5rem;
+                padding: 1.5rem 0.5rem;
+                border: 1px solid $backgroundColor;
+                border-radius: 1rem;
+            }
+        }
+        select{
+            width: 100%;
+            margin: 0 4%;
+            padding: 1.5rem 1rem;
+            border: 1px solid $backgroundColor;
+            border-radius: 1rem;
+        }
+        .formSubmit {
+            width: 50%;
+            align-self: end;
+            margin: 0 5% 0 0;
+            padding: 1.5rem 0.5rem;
+            border: 1px solid $backgroundColor;
+            border-radius: 1rem;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+    }
+}

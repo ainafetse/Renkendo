@@ -1,0 +1,126 @@
+@media screen and (min-width: 1024px) {
+    .bgIndex {
+        background-image: url(../assets/img/bg-index-desktop.png);
+    }
+    main{
+        .headlinesIndex {
+            height: 50vh;
+        }
+        div{
+            h1{
+                font-size: 4em;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 2.5em;
+            }
+            .mainNews {
+                margin-bottom: 10%;
+                .mainNewsInfo {
+                    display: flex;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-self: center;
+                    font-size: 1em;
+                    padding: 0;
+                }
+                .btn {
+                    margin: 10% 15%;
+                }
+                .mainNewsContainer {
+                    margin: 0 15%;
+                }
+            }
+        }
+        .newsletterInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    footer{
+        div{
+            a{
+                i{
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+    .displayMobile {
+        display: none;
+    }
+    .displayWeb {
+        display: inline-block;
+    }
+    /*Inicio de estilos de Shop PC*/
+    .btnLarge {
+        &:hover{
+        background-color: $accentColor;
+        color: $backgroundColor;
+        }
+    }
+    .headlines {
+        height: 60vh;
+    }
+    .shopMenuContainer {
+        grid-template-columns: 60% 20% 20%;
+        margin: 0 2%;
+    }
+    .sizesMenu {
+        display: flex;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            align-self: flex-end;
+            column-gap: 0.5rem;
+            list-style-type: none;
+            li{
+                a{
+                    color: $backgroundColor;
+                    background-color: $negativeColor;
+                    padding: 1rem 1.5rem;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /*Inicio de estilos de Prints PC*/
+    /*Inicio de estilos de pagina Contact de PC*/
+    .webView {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+    }
+    .socialLinksContainer {
+        width: 50%;
+        margin: 0;
+        h2{
+            margin: 0;
+            width: 60%;
+        }
+    }
+    .contactFormContainer {
+        width: 50%;
+        margin: 0 2%;
+        padding: 3% 2%;
+        form{
+            label{
+                textarea{
+                    height: 8vh;
+                }
+            }
+        }
+    }
+    .newsletterContainer {
+        margin: 15% 0 0 0;
+    }
+    /*Inicio de estilos de pagina Detail de PC*/
+}

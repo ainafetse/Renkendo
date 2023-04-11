@@ -1,0 +1,56 @@
+@media screen and (min-width: 1440px) {
+    main{
+        .headlinesIndex {
+            height: 70vh;
+        }
+        .mainNewsInfo {
+            justify-content: flex-end;
+            height: 100%;
+        }
+    }
+    .displayMobile {
+        display: none;
+    }
+    .displayWeb {
+        display: inline-block;
+    }
+    /*Inicio de estilos de Shop large PC*/
+    .btnLarge {
+        padding: 2rem 15rem;
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    .products {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .newsletterContainer {
+        margin: 0 10%;
+    }
+    .headlines {
+        height: 80vh;
+    }
+    /*Inicio de estilos de pagina Prints large PC*/
+    /*Inicio de estilos de pagina Contact large PC*/
+    .contactFormContainer {
+        margin: 0% 5%;
+    }
+    /*Inicio de estilos de pagina Detail de large PC*/
+    .positionImageDetail {
+        top: 20vh;
+        left: -12rem;
+    }
+    .carouselImageDetail {
+        width: 287px;
+        height: auto;
+    }
+    .productDetail {
+        height: 85vh;
+    }
+    .productControlsContainer {
+        margin-top: 37%;
+        padding: 0 36%;
+    }
+    .productDescription {
+        margin: auto 10%;
+    }
+}

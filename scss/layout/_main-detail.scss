@@ -1,0 +1,113 @@
+/*Inicio de estilos de pagina Detail*/
+.bgDetail {
+    background-image: url(../assets/img/bgDetailWhite.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-color: $backgroundColor;
+}
+.productDetail {
+    @include flex (column, center, center, none);
+    width: 100%;
+    margin-top: 16rem;
+    div{
+        div{
+            div{
+                img{
+                    height: 261px;
+                }
+            }
+        }
+    }
+}
+.carouselIndicatorsDetail {
+    @include flex (row, center, end, none);
+    height: 100px;
+    position: inherit;
+    margin: 1rem;
+    & [data-bs-target]{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+.productControlsContainer {
+    @include flex (column, center, center, none);
+    width: 100%;
+    font-size: 2rem;
+    margin: 2rem;
+    color: $negativeColor;
+    img{
+        max-width: 285px;
+        margin: 1rem;
+    }
+}
+.productControls {
+    @include flex (row, space-around, center, none);
+    width: 100%;
+    padding: 1rem;
+    span{
+        width: 60%;
+    }
+}
+.btnProductControl {
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1em;
+}
+.productSizes {
+    margin: 1rem 0;
+    button{
+        border-radius: 0.5em;
+        font-size: 1.2rem;
+        width: 3.5em;
+        height: 3.5em;
+        border: none;
+        &:hover{
+            background-color: $backgroundColor;
+            color: $negativeColor;
+            border: 1px solid $negativeColor;
+        }
+        &:active{
+            background-color: $backgroundColor;
+            color: $negativeColor;
+            border: 1px solid $negativeColor;
+        }
+    }
+}
+.btnProductCanvas {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 3em;
+    padding: 0.5rem 4em;
+    text-align: left;
+}
+.productDescription {
+    color: $negativeColor;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+}
+.moreProductsSection{
+    h3{
+        font-size: 2rem;
+        color: $negativeColor;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+.moreProductsCarousel {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 1rem 5rem 1rem;
+    div{
+        img{
+            max-width: 285px;
+            margin: 1rem;
+        }
+    }
+}

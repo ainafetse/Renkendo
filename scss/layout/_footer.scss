@@ -1,0 +1,79 @@
+/*Inicio de estilos del newsletter*/
+.newsletterContainer {
+    @include flex (column-reverse, space-around, center, none);
+    margin-bottom: 10%;
+    .newsletterInfo{
+        h2{
+            color: $backgroundColor;
+        }
+        color: $backgroundColor;
+        background-color: $negativeColor;
+        margin: -3rem 1rem 2rem;
+        padding: 10% 10%;
+        font-size: 1.5em;
+        .content {
+            width: 100%;
+            height: 40px;
+            border: 1px solid $backgroundColor;
+            border-radius: 10px;
+            overflow: hidden;
+            .subscription {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .add-email {
+                    border: none;
+                    padding: 0.8rem 1rem;
+                    outline: none;
+                }
+                .submit-email {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: calc(100% - 2px);
+                    width: 100px;
+                    border: none;
+                    border-radius: 8px;
+                    margin: 1px;
+                    padding: 0 20px;
+                    background: $accentColor;
+                    color: $backgroundColor;
+                    &:hover{
+                        color: $negativeColor;
+                        background-color: $backgroundColor;
+                    }
+                }
+            }
+        }
+    }
+    div{
+        img{
+            width: 100%;
+        }
+    }
+}
+/*Inicio de estilos de footer*/
+footer {
+    background-color: $footerColor;
+    div{
+        @include flex (row, space-evenly, center, 0);
+        padding: 2rem 0 1rem 0;
+        font-size: 1.2rem;
+        color: $negativeColor;
+    }
+    .fa-instagram {
+        color: $negativeColor;
+        font-size: 2.2em;
+    }
+    .fa-twitter {
+        color: $negativeColor;
+        font-size: 2.2em;
+    }
+    .fa-facebook {
+        color: $negativeColor;
+        font-size: 2.2em;
+    }
+    p{
+        margin-top: -0.5em;
+    }
+}

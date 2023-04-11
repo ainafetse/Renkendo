@@ -1,0 +1,48 @@
+/*Inicio de estilos de sección de Headlines*/
+main{
+    .headlinesIndex {
+        @include flex (column, center, center, none);
+        height: 40vh;
+        margin: 0 5%;
+        text-align: center;
+    }
+    div{
+        h1{
+            color: $negativeColor;
+            font-size: 2.4em;
+            font-weight: bold;
+        }
+        h2{
+            color: $negativeColor;
+            font-size: 2em;
+            font-weight: 400;
+        }
+    }
+}
+/*Inicio de estilos de sección New Releases*/
+.mainNews {
+    @include flex (column-reverse, center, center, none);
+    .mainNewsInfo{
+        @include flex (column, center, center, none);
+        padding: 20% 0;
+        margin: 0 10%;
+        h3{
+            color: $negativeColor;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        p{
+            color: $negativeColor;
+            font-size: 1.5em;
+        }
+        a{
+            width: 100%;
+            i{
+                padding-left: 1rem;
+            }
+        }
+    }
+    .mainNewsContainer {
+        margin: 0 5%;
+    }
+}

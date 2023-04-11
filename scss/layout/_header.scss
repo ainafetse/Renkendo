@@ -1,0 +1,34 @@
+/* Inicio de estilos de header */
+header {
+    width: 100%;
+    div{
+        font-size: 1.6em;
+        ul{
+            @include flex (row, space-between, center, none);
+            li{
+                list-style-type: none;
+                padding: 5px 10px;
+                a{
+                    color: $negativeColor;
+                    &:visited{
+                        color: $accentColor;
+                        text-decoration: none;
+                    }
+                    &:active{
+                        font-weight: 600;
+                        border-bottom: 2px solid $negativeColor;
+                    }
+                    .iconShop{
+                        color: $negativeColor;
+                    }
+                    .iconContact{
+                        color: $negativeColor;
+                    }
+                }
+                .menuPrimary{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

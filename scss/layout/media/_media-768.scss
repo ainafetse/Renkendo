@@ -1,0 +1,231 @@
+/* Tablet*/
+@media screen and (min-width: 768px) {
+    /*Inicio de estilos generales de tablet*/
+    .bgIndex {
+        background-image: url(../assets/img/bg-index-tablet.png);
+    }
+    /*Inicio de estilos de Header de tablet*/
+    .menuPrimary {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    /*Inicio de estilos de Index de tablet*/
+    main{
+        .headlinesIndex {
+            height: 45vh;
+            margin: 0 5%;
+        }
+        div{
+            h1{
+                font-size: 3.5em;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 2em;
+            }
+        }
+        .mainNews {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+        .newsletterContainer {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin: 3rem 0;
+            .newsletterInfo {
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                margin: 2.5rem;
+                z-index: 1;
+                position: relative;
+                display: grid;
+                align-content: space-between;
+            }
+            .newsletterImage {
+                grid-column-start: 4;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                z-index: -1;
+            }
+        }
+    }
+    /*Inicio de estilos de Footer Tablet*/
+    footer {
+        margin: 10% 0 0 0;
+        div{
+            p{
+                margin-top: 0;
+            }
+        }
+        .displayMobile {
+            display: none;
+        }
+        .displayWeb {
+            display: inline-block;
+        }
+    }
+    .displayMobile {
+        display: none;
+    }
+    .displayWeb {
+        display: inline-block;
+    }
+    /*Inicio de estilos de Shop Tablet*/
+    .headlines {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 45vh;
+        padding: 0;
+    }
+    .shopMenuContainer {
+        grid-template-columns: 70% 30%;
+        align-items: center;
+        margin: 0 3rem;
+    }
+    .collectionMenu {
+        display: none;
+    }
+    .collectionSelectorMenu {
+        font-size: 1.5rem;
+        font-weight: 400;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style-type: none;
+            gap: 1rem;
+            li{
+                a{
+                    color: $backgroundColor;
+                    background-color: $negativeColor;
+                    padding: 1rem 2rem;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+    .sizesMenu {
+        display: none;
+    }
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .productContainerShirts {
+        height: 310px;
+        width: 230px;
+        margin: 1rem;
+    }
+    .productButtons {
+        top: 85%;
+    }
+    .linkShirts {
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+    }
+    .disclaimer {
+        margin-bottom: 5%;
+    }
+    .disclaimerImage {
+        background-attachment: inherit;
+    }
+    /*Inicio de estilos de Prints de tablet*/
+    .productContainerPrints {
+        width: 230px;
+        height: 285px;
+    }
+    .productButtonsPrints {
+        top: 83%;
+    }
+    .linkPrints {
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+    }
+    /*Inicio de estilos de pagina Contact de tablet*/
+    .bgContact {
+        background-image: url(../assets/img/bg-index-desktop.png);
+    }
+    .socialLinksContainer {
+        height: 40vh;
+        align-items: center;
+        h2{
+            margin: 0 25%;
+        }
+        a{
+            display: flex;
+            width: 24%;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+    .contactFormContainer {
+        margin: 0 15%;
+        width: auto;
+        padding: 5%;
+    }
+    .formContainer {
+        margin: 3% 0 0 0;
+        label{
+            padding: 1rem 0;
+            /*textarea{
+                width: 100%;
+            }*/
+        }
+        select{
+            margin: 0;
+        }
+    }
+    .formSubmit {
+        margin: 0;
+        width: 35%;
+    }
+    /*Inicio de estilos de pagina Detail de tablet*/
+    .productDetail {
+        height: 70vh;
+        margin: 0;
+        position: relative;
+    }
+    .positionImageDetail {
+        position: absolute;
+        top: 113%;
+        left: -149%;
+        width: 322px;
+    }
+    .productControlsContainer {
+        margin: 0;
+        margin-top: 50%;
+        padding: 0 20%;
+    }
+    .productDescription {
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .moreProductsCarousel {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-content: center;
+        grid-column-gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+    .moreProductsContainer {
+        width: 165px;
+        height: 220px;
+        img{
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

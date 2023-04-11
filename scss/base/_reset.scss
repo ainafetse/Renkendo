@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    color: $negativeColor;
+}
+body {
+    background-color: $backgroundColor;
+}
+.bgIndex {
+    background-image: url(../assets/img/bgIndexMobile.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    padding: 1rem 2rem;
+    background-color: $accentColor;
+    border-radius: 0.5rem;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 10% 0;
+    &:hover{
+        background-color: $negativeColor;
+    }
+}
+.displayWeb {
+    display: none;
+}
+.displayMobile {
+    display: block;
+}
