@@ -3,9 +3,49 @@
         .headlinesIndex {
             height: 70vh;
         }
-        .mainNewsInfo {
-            justify-content: flex-end;
-            height: 100%;
+        .mainNews{
+            margin: 5% 0;
+            .mainNewsInfo {
+                justify-content: center;
+                height: 100%;
+                h3{
+                    font-size: 2.8em;
+                }
+            }
+        }
+        .newsletterContainer {
+            margin: 0 0 0 10%;
+            .newsletterInfo{
+                margin-left: 0;
+                padding-top: 15%;
+                padding-bottom: 15%;
+                h2{
+                    font-size: 3rem;
+                    font-weight: 600;
+                    padding: 2% 0;
+                }
+                p{
+                    font-size: 2rem;
+                    padding: 5% 0;
+                }
+                .content{
+                    font-size: 1.8em;
+                    .subscription{
+                        .add-email{
+                            font-size: 2rem;
+                        }
+                        .submit-email{
+                            width: 180px;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        p{
+            font-size: 1.8rem;
         }
     }
     .displayMobile {
@@ -15,6 +55,33 @@
         display: inline-block;
     }
     /*Inicio de estilos de Shop large PC*/
+    .sortByMenu{
+        .btnSmall{
+            font-size: 1.8rem;
+        }
+        .btnMedium{
+            font-size: 1.8rem;
+        }
+    }
+    .collectionSelectorMenu{
+        ul{
+            li{
+                a{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .sizesMenu{
+        ul{
+            justify-content: flex-end;
+            li{
+                a{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
     .btnLarge {
         padding: 2rem 15rem;
         font-size: 2.2rem;
@@ -23,11 +90,16 @@
     .products {
         grid-template-columns: repeat(5, 1fr);
     }
-    .newsletterContainer {
-        margin: 0 10%;
-    }
     .headlines {
         height: 80vh;
+    }
+    .buttonMore{
+        font-size: 1.5rem;
+        padding: 2rem 5rem;
+        border-radius: 3rem;
+    }
+    .disclaimer{
+        font-size: 2rem;
     }
     /*Inicio de estilos de pagina Prints large PC*/
     /*Inicio de estilos de pagina Contact large PC*/

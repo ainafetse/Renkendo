@@ -96,14 +96,13 @@ main div h2 {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  gap: none; }
+  gap: 10px; }
   .mainNews .mainNewsInfo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: none;
-    padding: 20% 0;
+    gap: 0;
     margin: 0 10%; }
     .mainNews .mainNewsInfo h3 {
       color: white;
@@ -125,7 +124,7 @@ main div h2 {
   flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
-  gap: none;
+  gap: 0;
   margin-bottom: 10%; }
   .newsletterContainer .newsletterInfo {
     color: black;
@@ -573,40 +572,45 @@ footer {
     font-size: 1.5em;
     font-weight: 500; }
   /*Inicio de estilos de Index de tablet*/
-  main .headlinesIndex {
-    height: 45vh;
-    margin: 0 5%; }
-  main div h1 {
-    font-size: 3.5em;
-    font-weight: 500; }
-  main div h2 {
-    font-size: 2em; }
-  main .mainNews {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%; }
-  main .newsletterContainer {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 3rem 0; }
-    main .newsletterContainer .newsletterInfo {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      margin: 2.5rem;
-      z-index: 1;
-      position: relative;
+  main {
+    /*Inicio de estilos de Footer Tablet*/ }
+    main .headlinesIndex {
+      height: 45vh;
+      margin: 0 5%; }
+    main div h1 {
+      font-size: 3.5em;
+      font-weight: 500; }
+    main div h2 {
+      font-size: 2em; }
+    main .mainNews {
       display: grid;
-      align-content: space-between; }
-    main .newsletterContainer .newsletterImage {
-      grid-column-start: 4;
-      grid-column-end: 9;
-      grid-row-start: 1;
-      grid-row-end: 3;
-      z-index: -1; }
-  /*Inicio de estilos de Footer Tablet*/
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%; }
+    main .newsletterContainer {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin: 3rem 0; }
+      main .newsletterContainer .newsletterInfo {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 2.5rem;
+        z-index: 1;
+        position: relative;
+        display: grid;
+        align-content: space-between; }
+        main .newsletterContainer .newsletterInfo h2 {
+          font-size: 1.8rem; }
+        main .newsletterContainer .newsletterInfo p {
+          padding: 5% 0; }
+      main .newsletterContainer .newsletterImage {
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        z-index: -1; }
   footer {
     margin: 10% 0 0 0; }
     footer div p {
@@ -712,11 +716,14 @@ footer {
     position: relative; }
   .positionImageDetail {
     position: absolute;
-    top: 113%;
-    left: -149%;
-    width: 322px; }
+    top: 141%;
+    left: -96%;
+    width: 209px; }
+  .carouselIndicatorsDetail {
+    top: 370%; }
   .productControlsContainer {
     margin: 0;
+    top: 50%;
     margin-top: 50%;
     padding: 0 20%; }
   .productDescription {
@@ -749,24 +756,25 @@ footer {
     font-weight: 500; }
   main div h2 {
     font-size: 2.5em; }
-  main div .mainNews {
-    margin-bottom: 10%; }
-    main div .mainNews .mainNewsInfo {
+  main .mainNews {
+    margin: 10% 0; }
+    main .mainNews .mainNewsInfo {
       display: flex;
       height: 100%;
       flex-direction: column;
       justify-content: flex-end;
       align-self: center;
-      font-size: 1em;
+      font-size: 1.2em;
       padding: 0; }
-    main div .mainNews .btn {
-      margin: 10% 15%; }
-    main div .mainNews .mainNewsContainer {
+    main .mainNews .btn {
+      margin: 2% 15%; }
+    main .mainNews .mainNewsContainer {
       margin: 0 15%; }
-  main .newsletterInfo {
+  main .newsletterContainer .newsletterInfo {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-left: 10%; }
   footer div a i {
     font-size: 1.4em; }
   .displayMobile {
@@ -818,31 +826,74 @@ footer {
     padding: 3% 2%; }
     .contactFormContainer form label textarea {
       height: 8vh; }
-  .newsletterContainer {
-    margin: 15% 0 0 0; }
-  /*Inicio de estilos de pagina Detail de PC*/ }
+  /*Inicio de estilos de pagina Detail de PC*/
+  .positionImageDetail {
+    position: absolute;
+    top: 195%;
+    left: -96%;
+    width: 209px; } }
 
 @media screen and (min-width: 1440px) {
   main .headlinesIndex {
     height: 70vh; }
-  main .mainNewsInfo {
-    justify-content: flex-end;
-    height: 100%; }
+  main .mainNews {
+    margin: 5% 0; }
+    main .mainNews .mainNewsInfo {
+      justify-content: center;
+      height: 100%; }
+      main .mainNews .mainNewsInfo h3 {
+        font-size: 2.8em; }
+  main .newsletterContainer {
+    margin: 0 0 0 10%; }
+    main .newsletterContainer .newsletterInfo {
+      margin-left: 0;
+      padding-top: 15%;
+      padding-bottom: 15%; }
+      main .newsletterContainer .newsletterInfo h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 2% 0; }
+      main .newsletterContainer .newsletterInfo p {
+        font-size: 2rem;
+        padding: 5% 0; }
+      main .newsletterContainer .newsletterInfo .content {
+        font-size: 1.8em; }
+        main .newsletterContainer .newsletterInfo .content .subscription .add-email {
+          font-size: 2rem; }
+        main .newsletterContainer .newsletterInfo .content .subscription .submit-email {
+          width: 180px;
+          font-size: 2rem; }
+  .footer p {
+    font-size: 1.8rem; }
   .displayMobile {
     display: none; }
   .displayWeb {
     display: inline-block; }
   /*Inicio de estilos de Shop large PC*/
+  .sortByMenu .btnSmall {
+    font-size: 1.8rem; }
+  .sortByMenu .btnMedium {
+    font-size: 1.8rem; }
+  .collectionSelectorMenu ul li a {
+    font-size: 1.8rem; }
+  .sizesMenu ul {
+    justify-content: flex-end; }
+    .sizesMenu ul li a {
+      font-size: 1.8rem; }
   .btnLarge {
     padding: 2rem 15rem;
     font-size: 2.2rem;
     font-weight: 500; }
   .products {
     grid-template-columns: repeat(5, 1fr); }
-  .newsletterContainer {
-    margin: 0 10%; }
   .headlines {
     height: 80vh; }
+  .buttonMore {
+    font-size: 1.5rem;
+    padding: 2rem 5rem;
+    border-radius: 3rem; }
+  .disclaimer {
+    font-size: 2rem; }
   /*Inicio de estilos de pagina Prints large PC*/
   /*Inicio de estilos de pagina Contact large PC*/
   .contactFormContainer {
@@ -861,3 +912,44 @@ footer {
     padding: 0 36%; }
   .productDescription {
     margin: auto 10%; } }
+
+@media screen and (min-width: 1920px) {
+  header div {
+    font-size: 2.5rem; }
+  main div h1 {
+    font-size: 6rem;
+    font-weight: 700; }
+  main div h2 {
+    font-size: 5rem; }
+  main .mainNews .mainNewsInfo h3 {
+    font-size: 3.8rem;
+    padding: 1%; }
+  main .mainNews .mainNewsInfo p {
+    font-size: 2.8rem;
+    padding: 5%; }
+  main .mainNews .mainNewsInfo .btn {
+    font-size: 2.8rem; }
+  main .newsletterContainer {
+    margin: 0 0 0 5%; }
+    main .newsletterContainer .newsletterInfo {
+      margin-left: 0;
+      padding-top: 5%;
+      padding-bottom: 10%; }
+      main .newsletterContainer .newsletterInfo h2 {
+        font-size: 3.5em;
+        font-weight: 600; }
+      main .newsletterContainer .newsletterInfo p {
+        font-size: 2em; }
+      main .newsletterContainer .newsletterInfo .content {
+        font-size: 2em;
+        height: 60px;
+        margin: 2%; }
+        main .newsletterContainer .newsletterInfo .content .subscription .add-email {
+          padding: 1.5rem 1rem;
+          font-size: 2.5rem; }
+        main .newsletterContainer .newsletterInfo .content .subscription .submit-email {
+          width: 200px;
+          font-size: 2.5rem; }
+  /*Inicio de estilos de footer*/
+  footer div p {
+    font-size: 2em; } }

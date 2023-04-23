@@ -1,0 +1,71 @@
+@media screen and (min-width: 1920px) {
+    header{
+        div{
+            font-size: 2.5rem;
+        }
+    }
+    main{
+        div{
+            h1{
+                font-size: 6rem;
+                font-weight: 700;
+            }
+            h2{
+                font-size: 5rem;
+            }
+        }
+        .mainNews{
+            .mainNewsInfo{
+                h3{
+                    font-size: 3.8rem;
+                    padding: 1%;
+                }
+                p{
+                    font-size: 2.8rem;
+                    padding: 5%;
+                }
+                .btn{
+                    font-size: 2.8rem;
+                }
+            }
+        }
+        .newsletterContainer {
+            margin: 0 0 0 5%;
+            .newsletterInfo{
+                margin-left: 0;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                h2{
+                    font-size: 3.5em;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 2em;
+                }
+                .content{
+                    font-size: 2em;
+                    height: 60px;
+                    margin: 2%;
+                    .subscription{
+                        .add-email{
+                            padding: 1.5rem 1rem;
+                            font-size: 2.5rem;
+                        }
+                        .submit-email{
+                            width: 200px;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*Inicio de estilos de footer*/
+    footer{
+        div{
+            p{
+                font-size: 2em;
+            }
+        }
+    }
+}

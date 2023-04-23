@@ -1,6 +1,6 @@
 /*Inicio de estilos del newsletter*/
 .newsletterContainer {
-    @include flex (column-reverse, space-around, center, none);
+    @include flex (column-reverse, space-around, center, 0);
     margin-bottom: 10%;
     .newsletterInfo{
         h2{

@@ -21,10 +21,9 @@ main{
 }
 /*Inicio de estilos de sección New Releases*/
 .mainNews {
-    @include flex (column-reverse, center, center, none);
+    @include flex (column-reverse, center, center, 10px);
     .mainNewsInfo{
-        @include flex (column, center, center, none);
-        padding: 20% 0;
+        @include flex (column, flex-end, center, 0);
         margin: 0 10%;
         h3{
             color: $negativeColor;
